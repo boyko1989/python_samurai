@@ -1,3 +1,4 @@
-import module
+from module import sum_module
 
-print(module.GLOBAL)
+
+print(sum_module(3, 2))
