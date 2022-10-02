@@ -1,5 +1,5 @@
-import package as other_pack
-import package.new_math as package
+from package.new_math import *
 
-print(other_pack.sum(2, 3))
-print(package.sum(2, 3))
+print(dir())
+
+print(mega.sum(3, 5))
