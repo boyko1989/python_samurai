@@ -1,3 +1,3 @@
-import package.super
+import package.new_math.super
 
-print(package.super.sum(2, 4))
+print(package.new_math.super.sum(2, 4))
