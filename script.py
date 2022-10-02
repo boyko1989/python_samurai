@@ -1,4 +1,6 @@
-from module import sum_module
+from module import *
 
 
-print(sum_module(3, 2))
+print(mul_module(2, 6))
+# _im_hidden()
+get_hidden()
