@@ -8,7 +8,7 @@ parser.add_argument("b", type=int, help="Second argument")
 
 # Опциональные аргументы
 
-parser.add_argument("-a", "--action", help="What to do with numbers", required=True)
+parser.add_argument("-a", "--action", help="What to do with numbers")
 
 args = parser.parse_args()
 print(args)
@@ -23,3 +23,5 @@ if args.action == 'sumarize':
     summarize(args.a, args.b)
 elif args.action == 'minusuze':
     minusize(args.a, args.b)
+else:
+    print('You must choose action')
