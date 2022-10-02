@@ -1,7 +1,3 @@
-import builtins
+import package.super
 
-
-# print(dir(builtins))
-
-for element in dir(builtins):
-    print(element)
+print(package.super.sum(2, 4))
