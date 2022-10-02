@@ -1,8 +1,12 @@
-import argparse
+import sys
+print(sys.argv)
 
-# объект класса ArgumentParser (часть модуля argparse)
-parser = argparse.ArgumentParser()
+a = int(sys.argv[1])
+b = int(sys.argv[2])
 
-args = parser.parse_args()
 
-print(args)
+def summarize(a, b):
+    return a + b
+
+
+print(summarize(a, b))
