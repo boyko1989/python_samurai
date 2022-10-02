@@ -8,7 +8,7 @@ parser.add_argument("b", type=int, help="Second argument")
 
 # Опциональные аргументы
 
-parser.add_argument("-a", "--action", help="What to do with numbers", default="sumarize")
+parser.add_argument("-a", "--action", help="What to do with numbers", required=True)
 
 args = parser.parse_args()
 print(args)
