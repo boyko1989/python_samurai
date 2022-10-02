@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("a", help="First argument", type=int)
 parser.add_argument("b", help="Second argument", type=int)
 
-parser.add_argument("-m", nargs=3)
+parser.add_argument("-m", choices=['1', '2', '3'])
 
 args = parser.parse_args()
 
