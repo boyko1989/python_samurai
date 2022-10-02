@@ -1,6 +1,6 @@
-from module import *
+import module
 
 
-print(mul_module(2, 6))
+print(module.mul_module(2, 6))
 # _im_hidden()
-get_hidden()
+module.get_hidden()
