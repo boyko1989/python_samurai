@@ -1,2 +1,7 @@
-import module
-print(dir(module))
+import builtins
+
+
+# print(dir(builtins))
+
+for element in dir(builtins):
+    print(element)
