@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("a", help="First argument", type=int)
 parser.add_argument("b", help="Second argument", type=int)
 
-parser.add_argument("-m", action="store_const", const="minusize")
+parser.add_argument("-m", action="store_true")
 
 args = parser.parse_args()
 
@@ -17,9 +17,7 @@ def summarize (a, b):
 def minusize (a, b):
     print(a - b)
 
-if args.m == None:
+if args.m == False:
     summarize(args.a, args.b)
-elif args.m == 'minusize':
+elif args.m == True:
     minusize(args.a, args.b)
-else:
-    print('You must choose action')
