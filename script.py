@@ -1,3 +1,2 @@
 import module
-
-print('Hello')
+print(dir(module))
