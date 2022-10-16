@@ -1,7 +1,7 @@
+import os
 from script import connect
 
-with open("password", "r") as f:
-    PASSWORD = f.read()
+PASSWORD = os.getenv("PASSWORD")
 
 result = connect(PASSWORD)
 
